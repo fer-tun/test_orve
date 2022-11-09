@@ -14,14 +14,14 @@ Things you may want to cover:
 
 * Configuration
 
--Clonar repositorio: https://github.com/fer-tun/test_orve.git
--Ejecutar en terminal:  bundle install
--Configurar archivo database.yml localizado en /config
--Ejecutar el comando: rails db:setup
--Ejecutar las migraciones: rails db:migrate
--Ejecutar el proyecto: Localizar la carpeta del proyecto con una terminal
--Ejecutar rails server
--En el navegador ingresar con a url: http://127.0.0.1:3000/home
+Clonar repositorio: https://github.com/fer-tun/test_orve.git
+Ejecutar en terminal:  bundle install
+Configurar archivo database.yml localizado en /config
+Ejecutar el comando: rails db:setup
+Ejecutar las migraciones: rails db:migrate
+Ejecutar el proyecto: Localizar la carpeta del proyecto con una terminal
+Ejecutar rails server
+En el navegador ingresar con a url: http://127.0.0.1:3000/home
 
 * Detalle
 
