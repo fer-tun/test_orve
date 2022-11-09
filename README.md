@@ -33,13 +33,20 @@ Things you may want to cover:
 * Detalle
 
 #Subir archivo
+
 -En el menú cargar el archivo excel en import
+
 -Click en subir
+
 -Retornara el monto total de ingreso por excel
+
 #Listado
+
 -En el menú opcion Sales despliega la lista de las ventas cargadas
 asi como el total de ingreso general.
 
 * Excel a Probar
+
 -El archivo a cargar se encuentra en la carpeta raiz del proyecto: Code challenge rails.xlsx
+
 -Nota:Se puede subir cualquier excel con el mismo formato.
