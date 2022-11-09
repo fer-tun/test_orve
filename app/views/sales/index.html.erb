@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hola Mundo</title>
+	
+</head>
+<body>
+	<main class="main-content position-relative border-radius-lg ">
+    <!--CONTENIDO-->
+    <div class="container-fluid py-4">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 mx-auto mt-5">
+                <div class="card my-lg-0">
+                    <div class="card-header">
+                    	<h4 class="mb-0">Listado de Ventas</h4>
+                    </div>
+                    <div class="card-body">
+                    	<div class="row">
+                    		<div class="table-responsive">
+								<table class="table stripe" id="mytable" style="width:100%">
+								    <thead>
+									    <tr>
+									    	<th scope="col">#</th>
+									    	<th scope="col">client</th>
+									    	<th scope="col">product</th>
+									    	<th scope="col">cant</th>
+									    	<th scope="col">price unit</th>
+									    	<th scope="col">total</th>
+									    </tr>
+									</thead>
+									<tbody>
+										<% ingresos = 0 %>
+										<% @sales.each() do |data| %>
+									    <tr>
+									    	<th><%= data.id %> </th>
+									    	<td><%= data.client.name %></td>
+									    	<td><%= data.product.description %></td>
+									    	<td><%= data.number_product %></td>
+									    	<td><%= data.price_product %></td>
+									    	<td><%= data.total %></td>
+									    </tr>
+									    <% ingresos+=data.total.to_d %>
+									    <% end  %>
+									</tbody>
+								</table>
+								<table class="table">
+								    <thead>
+									    <tr>
+									    	<th scope="col">Total Ingresos</th>
+									    </tr>
+									</thead>
+									<tbody>
+									    <tr>
+									    	<td><%=  ingresos %> </td>
+									    </tr>
+									</tbody>
+								</table>
+							</div>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+	$(document).ready( function () {
+	    $('#mytable').DataTable();
+	} );
+</script>

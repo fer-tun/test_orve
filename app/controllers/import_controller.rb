@@ -46,9 +46,7 @@ class ImportController < ApplicationController
 	    render "import/index"
 	end
 
-	def sale_list
-		
-	end
+	
 
 end
 
@@ -56,3 +54,6 @@ end
 #products [id,price,description]
 #sale [id,client_id,product_id,seller_id,price_product,number_product,total]
 #seller [id,name,address]
+
+
+# @sales = Sale:all 
